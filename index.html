@@ -1,0 +1,23 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to the stylesheet -->
+    <title>Craps Game</title>
+</head>
+<body>
+    <div class="container"> <!-- Container for entire game -->
+        <h1>Craps</h1> <!-- Heading for the game -->
+        <p>Bank Balance: $<span id="balance">100.00</span></p> <!-- Displaying  current bank balance -->
+        <input type="text" placeholder="Enter your bet" id="betInput"> <!-- Input for entering bet amount -->
+        <button onclick="rollDice()">Roll</button> <!-- Button to roll the dice -->
+        <div id="diceContainer"> <!-- Container for displaying the dice images -->
+            <img src="img/dice1.png" alt="Dice 1" id="dice1"> <!-- Image tag for dice -->
+            <img src="img/dice2.png" alt="Dice 2" id="dice2"> <!-- Image tag for the second dice -->
+        </div>
+        <p id="outcome"></p> <!-- Placeholder for showing game outcome -->
+    </div>
+    <script src="js/craps.js"></script> <!-- Link to the external JavaScript -->
+</body>
+</html>
